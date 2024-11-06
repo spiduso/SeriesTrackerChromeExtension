@@ -1,17 +1,21 @@
 {
   "name": "Series Tracker",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Keeps track of series",
   "manifest_version": 3,
   "author": "Hoang Anh Tuan",
-  "action":{
+  "action": {
     "default_popup": "index.html",
     "default_title": "Series Tracker"
+  },
+  "background": {
+    "service_worker": "js/background.js"
   },
   "permissions": [
     "tabs",
     "storage"
   ],
+  "options_page": "options.html",
   "icons": {
     "16": "img/icon-16.png",
     "32": "img/icon-32.png",
